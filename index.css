@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    color: white;
+}
+body{
+    background-color: black;
+}
+
+header{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0px;
+}
+
+header>h1{
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: 500;
+}
+header>ul{
+    display: flex;
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+}
+header>ul>li{
+    font-size: 14px;
+    padding-left: 30px;
+}
+#share-icons>i{
+    padding-right: 20px;
+}
+
+.main>.pizza>img{
+    height: 500px;
+    width: 100vw;
+}
+#pizza-detail{
+    width: 360px;
+    position: absolute;
+    top: 140px;
+    left: 40px;
+}
+#pizza-detail>h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+hr{
+    border: none;           /* Remove the default border */
+    height: 3px;            /* Set the thickness of the line */
+    background-color: red;
+    margin: 20px 0px 12px 0px;
+}
+
+#about{
+    padding: 40px;
+}
+#about>h1{
+    text-align: center;
+}
+
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+#about>hr{
+    width: 300px;
+    margin: 20px auto;
+}
+.about-container>.about-text{
+    margin-top: 20px;
+    width: 500px;
+    align-items: center;
+}
+.about-container>.about-text>hr{
+    height: 1px;
+}
+.about-container>img{
+    height: 300px;
+    width: 380px;
+}
+
+#menu{
+    padding: 40px;
+}
+#menu>h1{
+    text-align: center;
+}
+#menu>hr{
+    margin: 20px auto;
+    width: 300px;
+}
+.menu-container{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 430px);
+    grid-template-rows: repeat(3, 160px);
+    justify-content: center;
+    gap: 40px;
+}
+
+.box{
+    display: flex;
+}
+.box>.right{
+    margin-left: 20px;
+}
+.box>.right>h3{
+    font-size: 20px;
+    color: gold;
+    font-weight: 300;
+}
+.box>.right>p{
+    margin-top: 12px;
+    font-size: 13px;
+    font-weight: 300;
+}
+/* for tablet view */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header>ul{
+        display: block;
+    }
+    header>ul>li{
+        margin-bottom: 12px;
+    }
+    #pizza-detail{
+        top: 300px;
+    }
+}
+
+/* #carousel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+#carousel>h1{
+    text-align: center;
+}
+#carousel>hr{
+    width: 300px;
+    margin: 20px auto;
+}
+
+.carousel-container{
+    width: 80%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+}
+.carousel-container>img{
+    width: 80%;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.carousel-container>#left-icon{
+    position: relative;
+    top:50%;
+    left: 10%;
+}
+.carousel-container>#right-icon{
+    position: relative;
+    top:50%;
+    left: 92%;
+}
+
+.points{
+    display: flex;
+    position: relative;
+    top: 102%;
+    left: -30%;
+}
+.point{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    margin-right: 4px;
+    background-color: gray;
+}
+.fill{
+    background-color: white;
+}
+
+#gallary>h1{
+    text-align: center;
+
+}
+#gallary>hr{
+    width: 300px;
+    margin: 20px auto;
+}
+#gallary{
+    margin: 40px;
+}
+.galleryImageContainer{
+    height: 400px;
+    width: 80%;
+    display: flex;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 14%);
+    gap: 10px;
+}
+
+
+.gallaryImage{
+    border-radius: 10px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSWFmrKPzyNQhUkfLNItXS8cx063fectkzw&s");
+    background-size: cover;
+}
+.specialImage{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs9IRejaW2d_YMXDS_0_VV0rC20TkTFRisng&s");
+    background-size: 100% 100%;
+    height: inherit;
+    width: 100%;
+}
+
+#div1{
+    height: inherit;
+    width: 50%;
+}
+
+#div2{
+    height: inherit;
+    width: 25%;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#div3{
+    height: inherit;
+    width: 25%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+
+#find{
+    margin-top: 100px;
+}
+#find>h1{
+    text-align: center;
+}
+#find>hr{
+    width: 300px;
+    margin: 20px auto;
+}
+
+.find-container{
+    width: 80%;
+    height: 400px;
+    display: flex;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 14%);
+    gap: 20px;
+}
+.find-container>.left{
+    width: 50%;
+}
+.find-container>.left>p{
+    margin-bottom: 20px;
+}
+.find-container>.right{
+    width: 50%;
+}
+.find-container>.left>.box{
+    display: flex;
+    margin-top: 12px;
+    justify-content: left;
+    gap: 12px;
+}
+
+.find-container>.right{
+    height: 200px;
+    width: 240px;
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 120px 40px 120px;
+    margin-top: 140px;
+}
+.manIcon>i{
+    font-size: 40px;
+}
+
+.footer>.contact>.box{
+    display: flex;
+    gap: 12px;
+    justify-content: left;
+    margin-bottom: 12px;
+}
+
+.footer>.contact>.box>i{
+    font-size: 20px;
+}
+/* for mobile view */
+@media (max-width: 767px){
+    header{
+        display: block;
+        text-align: center;
+    }
+    header>ul{
+        display: block;
+        margin-top: 12px;
+    }
+    header>ul>li{
+        margin-top: 12px;
+    }
+    header>#share-icons{
+        margin-top: 20px;
+    }
+    #pizza-detail{
+        top: 400px;
+    }
+    .about-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .find-container{
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .find-container>.right{
+        margin-bottom: 100px;
+    }
+    .find-container>.left{
+        width: 100%;
+    }
+    .find-container>.right>iframe{
+        width: 340px;
+        height: 300px;
+    }
+    .footer{
+        padding: 40px;
+    }
+    .menu-container{
+        display: block;
+    }
+    .menu-container>.box{
+        margin-bottom: 20px;
+    }
+    header{
+        z-index: -1;
+    }
+}
